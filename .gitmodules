@@ -1,3 +1,6 @@
 [submodule "themes"]
 	path = themes
 	url = https://github.com/enochyu-official/themes
+[submodule "themes/EnochSiteTheme"]
+	path = themes/EnochSiteTheme
+	url = https://github.com/enochyu-official/EnochSiteTheme
