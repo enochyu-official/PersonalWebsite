@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://enochyu.pages.dev/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/activities/</loc>
+    <loc>https://enochyu.pages.dev/activities/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://enochyu.pages.dev/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://enochyu.pages.dev/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://enochyu.pages.dev/</loc>
   </url><url>
-    <loc>http://localhost:1313/honors/</loc>
+    <loc>https://enochyu.pages.dev/honors/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://enochyu.pages.dev/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://enochyu.pages.dev/tags/</loc>
   </url>
 </urlset>

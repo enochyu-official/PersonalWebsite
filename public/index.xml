@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enoch Yu</title>
-    <link>http://localhost:1313/</link>
+    <link>https://enochyu.pages.dev/</link>
     <description>Recent content on Enoch Yu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://enochyu.pages.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://enochyu.pages.dev/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://enochyu.pages.dev/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Activities</title>
-      <link>http://localhost:1313/activities/</link>
+      <link>https://enochyu.pages.dev/activities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/activities/</guid>
+      <guid>https://enochyu.pages.dev/activities/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://enochyu.pages.dev/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://enochyu.pages.dev/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Honors</title>
-      <link>http://localhost:1313/honors/</link>
+      <link>https://enochyu.pages.dev/honors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/honors/</guid>
+      <guid>https://enochyu.pages.dev/honors/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>https://enochyu.pages.dev/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>https://enochyu.pages.dev/projects/</guid>
       <description></description>
     </item>
   </channel>
