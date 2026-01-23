@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1C1C1E;
+  --secondary-color: #1A1110;
+  --accent-color: #EC5800;
+  --text-light: #f5f5f5;
+  --text-dark: #1B1212;
+  --bg-light: #f7fafc;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+

@@ -1,0 +1,21 @@
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Enoch Yu</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <img src="/img/burger.svg" alt="Menu" class="icon-burger">
+        <img src="/img/close.svg" alt="Close" class="icon-close">
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" class="nav-link {{ if .IsHome }}active{{ end }}">Home</a></li>
+        <li><a href="/about" class="nav-link {{ if eq .RelPermalink "/about/" }}active{{ end }}">About</a></li>
+        <li><a href="/projects" class="nav-link {{ if eq .RelPermalink "/projects/" }}active{{ end }}">Projects</a></li>
+        <li><a href="/honors" class="nav-link {{ if eq .RelPermalink "/honors/" }}active{{ end }}">Honors</a></li>
+        <li><a href="/activities" class="nav-link {{ if eq .RelPermalink "/activities/" }}active{{ end }}">Activities</a></li>
+        <li><a href="/contact" class="nav-link {{ if eq .RelPermalink "/contact/" }}active{{ end }}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

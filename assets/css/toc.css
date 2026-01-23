@@ -1,0 +1,166 @@
+@media (min-width: 1024px) {
+  .honors-content-section {
+    display: flex;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: start;
+  }
+}
+
+.honors-list {
+  flex: 1;
+  min-width: 0;
+}
+
+/* TOC */
+.toc-sidebar {
+  width: 100%;
+  position: static;
+  height: auto;
+  max-height: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  .toc-sidebar {
+    width: 280px;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    max-height: calc(100vh - 120px);
+    margin-bottom: 0;
+    flex-shrink: 0;
+    order: 1;
+  }
+}
+
+.toc {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.toc-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  color: #1B1B1B;
+  font-weight: 600;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  border-left: 1px solid #EC5800;
+  margin: 0;
+}
+
+.toc li {
+  margin: 4px 0;
+}
+
+.toc a {
+  display: block;
+  padding: 6px 16px;
+  color: #1B1B1B;
+  text-decoration: none;
+  font-size: 14px;
+  border-left: 2px solid transparent;
+  margin-left: -1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.toc a:hover {
+  color: #EC5800;
+  border-left-color: #EC5800;
+  background: rgba(102, 126, 234, 0.05);
+}
+
+.toc a.active {
+  color: #EC5800;
+  border-left-color: #EC5800;
+  font-weight: 600;
+}
+
+.toc ul ul {
+  padding-left: 15px;
+  border-left: none;
+  margin-top: 4px;
+}
+
+/* Honors List */
+.honors-list h2 {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  position: relative;
+  font-size: 1.3rem;
+  color: #EC5800;
+  font-weight: 600;
+}
+
+.honors-list h2:first-of-type {
+  margin-top: 0;
+}
+
+.honors-list h2::before,
+.honors-list h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 80px);
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.honors-list h2::before {
+  left: 0;
+}
+
+.honors-list h2::after {
+  right: 0;
+}
+
+/* Honor items */
+.honor-item {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  border-left: 5px solid #EC5800;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.honor-year {
+  color: #EC5800;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.honor-item h3 {
+  margin: 0.5rem 0;
+  color: #2d3748;
+  font-size: 1.3rem;
+}
+
+.honor-item p {
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .content-section {
+    flex-direction: column;
+  }
+  
+  .honors-list h2::before,
+  .honors-list h2::after {
+    width: calc(50% - 60px);
+  }
+}

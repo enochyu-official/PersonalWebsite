@@ -1,0 +1,80 @@
+<footer class="footer">
+  <div>
+    <a href="https://github.com/enochyu-official" target="_blank" rel="noopener noreferrer">
+      &copy; {{ now.Year }} {{ .Site.Params.author }}. All Rights Reserved.
+    </a>
+  </div>
+
+  <script>
+    var t = setInterval(function() {
+      if (window.goatcounter && window.goatcounter.visit_count) {
+        clearInterval(t)
+        window.goatcounter.visit_count({append: '#gc-total-views'})
+      }
+    }, 100)
+  </script>
+  <script data-goatcounter="https://enochyu-blog.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.v5.js"
+          crossorigin="anonymous"
+          integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
+
+  <script>
+    function updateViewCounts() {
+      const counters = document.querySelectorAll(".page-views");
+
+      counters.forEach(el => {
+        let path = el.getAttribute("data-gc-path") || "";
+
+        path = path.replace(/^\/+|\/+$/g, "");
+
+        const gcPath = path === "" ? "/" : path;
+        const url = `https://enochyu-blog.goatcounter.com/counter/${encodeURIComponent(gcPath)}.json`;
+
+        fetch(url)
+          .then(r => {
+            if (!r.ok) {
+              throw new Error(`HTTP ${r.status}`);
+            }
+            return r.json();
+          })
+
+          .then(d => {
+            el.textContent = d.count || "0";
+          })
+
+          .catch(err => {
+            console.error("GoatCounter Error for path:", path, err);
+            el.textContent = "0";
+          });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateViewCounts);
+    } else {
+      updateViewCounts();
+    }
+  </script>
+
+  <script>
+    MathJax = {
+      options: {
+        menuOptions: {
+          settings: {
+            enrich: false,
+            collapsible: false,
+            speech: false,
+            braille: false,
+            assistiveMml: false,
+          }
+        }
+      },
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</footer>

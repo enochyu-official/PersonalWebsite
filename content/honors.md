@@ -1,0 +1,4 @@
+---
+title: "Honors"
+layout: "honors"
+---

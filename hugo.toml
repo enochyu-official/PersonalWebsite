@@ -1,4 +1,7 @@
 baseURL = 'https://enochyu.pages.dev/'
 languageCode = 'en-us'
 title = 'Enoch Yu'
-theme = 'EnochSiteTheme'
+
+[params]
+author = "Enoch Yu"
+

@@ -1,0 +1,33 @@
+.page-header {
+  --s: 200px;
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+  
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 50%) 
+     calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 50%);
+  background-size: var(--s) calc(var(--s)*tan(30deg));
+
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  margin-top: 60px;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.content-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+}

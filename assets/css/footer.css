@@ -1,0 +1,19 @@
+.footer {
+  background: rgba(28, 28, 30, 0.95);
+  color: whitesmoke !important;
+  text-align: center;
+  padding: 1.7rem;
+}
+
+.footer a, 
+.footer a:link {
+  color: whitesmoke !important;
+  text-decoration: none;
+}
+
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
+  color: #D3D3D3 !important;
+  text-decoration: none;
+}

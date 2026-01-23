@@ -1,6 +1,9 @@
 +++
-author = Enoch Yu
-date = '{{ .Date }}'
-draft = false
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+author: Enoch Yu
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: false
+categories: []
+tags: []
+image: ""
 +++

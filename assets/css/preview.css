@@ -1,0 +1,116 @@
+.preview-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.preview-content {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.preview-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  line-height: 1.8;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-0.7px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* About */
+.about-preview {
+  background-color: whitesmoke;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+
+#about-title {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  color: var(--text-dark);
+}
+
+#about-text {
+  display: flex;
+  margin-bottom: 1.3rem;
+  text-align: left;
+}
+
+#about-button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border-radius: 0;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: var(--transition);
+}
+
+#about-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Projects */
+.projects-preview {
+  background-color: whitesmoke;
+}
+
+/* Honors */
+.honors-preview {
+  background-color: #dee2e6 !important;
+}
+
+.honors-preview h2 {
+  text-align: center;
+}
+
+
+/* Activities */
+.activities-preview {
+  background-color: whitesmoke;
+}
+
+.activities-preview h2 {
+  text-align: center;
+}

@@ -1,0 +1,173 @@
+{{ define "main" }}
+<section class="hero-slider" id="home">
+  <div class="slider-container">
+    <div class="slide active">
+      <div class="slide-content">
+        <h1 class="slide-title">Enoch Yu</h1>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-content">
+        <h1 class="slide-title">Enoch Yu</h1>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-content">
+        <h1 class="slide-title">Enoch Yu</h1>
+      </div>
+    </div>
+  </div>
+  <button class="slider-btn prev" onclick="changeSlide(-1)">
+    <i class="fa-classic fa-chevron-circle-left"></i>
+  </button>
+  <button class="slider-btn next" onclick="changeSlide(1)">
+    <i class="fa-classic fa-chevron-circle-right"></i>
+  </button>
+  <div class="slider-dots">
+    <span class="dot active" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+</section>
+
+<section class="preview-section about-preview">
+  <div class="about-container">
+    <div class="preview-content">
+      <h2 class="section-title" id="about-title">Hi!! Welcome to my personal website!</h2>
+      <p class="preview-text" id="about-text">
+      I am a high school sophomore living in South Korea.
+      <br>
+      <br>
+      Besides mathematics, programming, and academics, I do have lots of hobbies and interests! Please check out more information below!!
+      </p>
+      <a href="/about" class="btn-primary" id="about-button">READ MORE</a>
+    </div>
+    <div id="preview-content">
+      <iframe style="width: 100%; aspect-ratio: 16 / 9; border: 0;" allowfullscreen
+      src="https://www.youtube.com/embed/IXMZaVHtVPs?autoplay=0&mute=1">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<hr class="styled-hr">
+
+<section class="preview-section projects-preview">
+  <div class="preview-content">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-card-iframe">
+          <iframe src=""></iframe>
+        </div>
+        <div class="project-card-contents">
+          <h3>Project Alpha</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="btn-primary" id="project-button">READ MORE</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-iframe">
+          <iframe src=""></iframe>
+        </div>
+        <div class="project-card-contents">
+          <h3>Project Beta</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="btn-primary" id="project-button">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <a href="projects.html" class="btn-primary">View All Projects</a>
+  </div>
+</section>
+
+<section class="honors-preview cards-section">
+  <h2 class="section-title">Honors & Awards</h2>
+  <div class="cards-container">
+    <div class="card">
+      <div class="card-image">
+        <img src="" alt="Academic">
+      </div>
+      <div class="card-content">
+        <h3>Academic</h3>
+        <a href="" class="btn-card">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="" alt="Volunteering">
+      </div>
+      <div class="card-content">
+        <h3>Volunteering</h3>
+        <a href="" class="btn-card">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="" alt="Music">
+      </div>
+      <div class="card-content">
+        <h3>Music</h3>
+        <a href="" class="btn-card">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="" alt="Sport">
+      </div>
+      <div class="card-content">
+        <h3>Sport</h3>
+        <a href="" class="btn-card">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="activities-preview activities-cards-section">
+  <h2 class="section-title">Activities</h2>
+  <div class="activities-cards-container">
+    <div class="activities-card">
+      <div class="activities-card-image">
+        <img src="" alt="">
+      </div>
+      <div class="activities-card-content">
+        <h3>YouTube Channel</h3>
+        <a href="" class="activities-btn-card">Read More</a>
+      </div>
+    </div>
+
+    <div class="activities-card">
+      <div class="activities-card-image">
+        <img src="" alt="">
+      </div>
+      <div class="activities-card-content">
+        <h3>Volunteering</h3>
+        <a href="" class="activities-btn-card">Read More</a>
+      </div>
+    </div>
+
+    <div class="activities-card">
+      <div class="activities-card-image">
+        <img src="" alt="">
+      </div>
+      <div class="activities-card-content">
+        <h3>Leadership</h3>
+        <a href="" class="activities-btn-card">Read More</a>
+      </div>
+    </div>
+
+    <div class="activities-card">
+      <div class="activities-card-image">
+        <img src="" alt="">
+      </div>
+      <div class="activities-card-content">
+        <h3>Music</h3>
+        <a href="" class="activities-btn-card">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

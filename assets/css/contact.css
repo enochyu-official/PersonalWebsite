@@ -1,0 +1,93 @@
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content p {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.error-container {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .slide-title {
+    font-size: 2rem;
+  }
+  
+  .slide-text {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .slider-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+#btn-contact {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+}
