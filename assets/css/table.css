@@ -1,0 +1,64 @@
+#projectList {
+  display: flex;
+  justify-content: center;
+}
+
+caption {
+  text-align: center;
+  font-weight: bold;
+  color: #0B1E38;
+  padding: 10px 0;
+  background-color: #f0e9eb;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #e5e5e5;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  table {
+    display: table;
+    table-layout: fixed;
+    word-wrap: break-word;
+    border-collapse: collapse;
+    border: 2px solid #e5e5e5;
+    max-width: 90vw;
+  }
+
+  caption { font-size: 18px !important; }
+  table th {
+    font-size: 12px !important;
+    padding: 5px 3px;
+  }
+  table td {
+    font-size: 10px !important;
+    padding: 5px 3px;
+  }
+}
+
+
+@media (max-width: 768px) {
+   table {
+    border-collapse: collapse;
+    border: 2px solid #e5e5e5;
+    width: 90%;
+  }
+
+  caption { font-size: 24px; }
+  table { font-size: 18px; }
+}
+
+
+th, td {
+  color: #14213d;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+}
+
+a {
+  color: #fe5f55;
+}
+
