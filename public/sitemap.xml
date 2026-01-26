@@ -2,24 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pages/about/</loc>
+    <loc>https://enochyu.pages.dev/pages/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/activities/</loc>
+    <loc>https://enochyu.pages.dev/pages/activities/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://enochyu.pages.dev/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/contact/</loc>
+    <loc>https://enochyu.pages.dev/pages/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://enochyu.pages.dev/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/honors/</loc>
+    <loc>https://enochyu.pages.dev/pages/honors/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/</loc>
+    <loc>https://enochyu.pages.dev/pages/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/projects/</loc>
+    <loc>https://enochyu.pages.dev/pages/projects/latex/ps01/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/projects/solution-notes/</loc>
+    <loc>https://enochyu.pages.dev/pages/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://enochyu.pages.dev/pages/projects/solution-notes/</loc>
+  </url><url>
+    <loc>https://enochyu.pages.dev/tags/</loc>
   </url>
 </urlset>
