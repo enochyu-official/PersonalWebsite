@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://enochyu.pages.dev/pages/about/</loc>
+    <loc>http://localhost:1313/pages/about/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/pages/activities/</loc>
+    <loc>http://localhost:1313/pages/activities/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/pages/contact/</loc>
+    <loc>http://localhost:1313/pages/contact/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/pages/honors/</loc>
+    <loc>http://localhost:1313/pages/honors/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/pages/</loc>
+    <loc>http://localhost:1313/pages/independent-study/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/pages/projects/latex/ps01/</loc>
+    <loc>http://localhost:1313/pages/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/pages/projects/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps01/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/pages/projects/solution-notes/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps02/</loc>
   </url><url>
-    <loc>https://enochyu.pages.dev/tags/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps03/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps04/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps05/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps06/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/projects/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/independent-study/math/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

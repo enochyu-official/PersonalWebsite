@@ -1,0 +1,132 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric}
+\usepackage{tkz-euclide}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 6}
+\author{Enoch Yu}
+\date{May 2025}
+
+\begin{document}
+
+\section*{Probability and Counting}
+\[
+\boxed{\text{Probability}=\frac{\text{cases \textbf{with} order}}{\text{total cases \textbf{with} order}}=\frac{\text{cases \textbf{without} order}}{\text{total cases \textbf{without} order}}}
+\]
+\subsection*{Example I} There are three red coins and two blue coins. Find the probability of picking two coins that are the same color.
+\\\\
+\textbf{Solution I: With Order}  \\
+Number of cases for choosing coins with same color: $3\cdot2+2\cdot1$ \\
+Total cases: $5\cdot4$ \\
+\[
+\therefore \frac{3\cdot2+2\cdot1}{5\cdot4}=\frac{8}{20}=\boxed{\frac{2}{5}}
+\]
+\\\\
+\textbf{Solution II: Without Order} \\
+Number of cases for choosing coins with same color: ${}_3C_2+{}_2C_2$ \\
+Total cases: ${}_5C_2$ \\
+\[
+\therefore \frac{{}_3C_2+{}_2C_2}{{}_5C_2}=\frac{4}{10}=\boxed{\frac{2}{5}}
+\]
+\\\\
+To choose the best method to use to solve a problem depends on each problem. Counting with order may or may not be more convenient compared to counting without order.
+\\\\
+\subsection*{Example II} Five coins are tossed in the air simultaneously. What is the probability that there are two coins that landed on head?
+\\\\
+\textbf{Solution I: With Order} \\
+Number of cases of two coins landing on the head: $\frac{5!}{2!3!}$ (Arrangement of two heads and three tails) \\
+Total cases: $2^5$
+\[
+\therefore \frac{\frac{5!}{2!3!}}{2^5}=\frac{10}{32}=\boxed{\frac{5}{16}}
+\]
+\\\\
+\textbf{Solution II: Without Order} \\
+Number of cases of two coins landing on the head: ${}_5C_2$ \\
+Total cases: ${}_5C_0+{}_5C_1+{}_5C_2+{}_5C_3+{}_5C_4+{}_5C_5$
+\[
+\therefore \frac{{}_5C_2}{{}_5C_0+{}_5C_1+{}_5C_2+{}_5C_3+{}_5C_4+{}_5C_5}=\frac{10}{2^5}=\boxed{\frac{5}{16}}
+\]
+\\\\
+In a more advanced problem, counting with order was more simple than counting without order.
+
+\newpage
+\section*{Problem}
+Your wardrobe contains two red socks, two green socks, two blue socks, and two yello socks. It is currently dark right now, but you decide to pair up the socks randomly. What is the probability that none of the pairs are of the same color?
+\\\\
+\textbf{Key Word} Counting Strategy, Principle of Inclusion and Exclusion
+\\\\
+\textbf{Solution I: Without Order}
+\\\\
+Total case without order: $\frac{8!}{4!\cdot2^4}$
+\\\\
+Principle of Inclusion and Exclusion is applied for cases without order!!
+\[
+\frac{8!}{4!\cdot2^4}-\frac{6!}{3!\cdot2^3}\cdot{}_4C_1+\frac{4!}{2!\cdot2^2}\cdot{}_4C_2-\frac{2!}{1!\cdot2^1}\cdot{}_4C_3+\frac{0!}{0!\cdot2^0}\cdot{}_4C_4=60
+\]
+Therefore, $\frac{60}{105}=\boxed{\frac{4}{7}}$
+\qed
+
+\noindent
+\\\\
+\textbf{Solution II: With Order}
+\\\\
+Let us count by letting that the number of cases does change when the arrangement of each pair change while the number remains the same if the arrangement occurred within a pair.
+\\\\
+Total possibility: ${}_8C_2\cdot{}_6C_2\cdot{}_4C_2\cdot{}_2C_2$
+\\\\
+For specific case, choose two groups from 4 types of socks, or ${}_4C_2$. Within each chosen pair, choose one socks each, or ${}_2C_1\cdot{}_2C_1$. WLOG, the next three pairs may be chosen.
+\\
+Case I: $(1, 1)$ \\
+${}_2C_1\cdot{}_2C_1=4$
+\\\\
+Case II: $(2,1)$ \\
+${}_2C_1\cdot{}_2C_1\cdot{}_2C_1\cdot{}_2C_1\cdot{}_2C_1=32$
+\\\\
+Case III: $(2,2)$ \\
+${}_2C_1\cdot{}_2C_1\cdot{}_4C_2=24$
+\\\\
+$\therefore \frac{{}_4C_2\cdot{}_2C_1\cdot{}_2C_1(4+32+24)}{{}_8C_2\cdot{}_6C_2\cdot{}_4C_2\cdot{}_2C_2}=\boxed{\frac{4}{7}}$
+\qed
+\\\\
+\\
+If the number of cases increase, PIE, or Solution I, must be utilized.
+
+\newpage
+\section*{Problem}
+Given that $468751=5^8+5^7+1$ is a product of two primes, find both of them.
+\begin{solution}
+Let $x=5$
+\begin{align*}
+    x^8+x^7+1&=x^8+x^7+x^6-x^6+1=x^6(x^2+x+1)-x^6+1 \\
+    &=x^6(x^2+x+1)-x^6-x^5-x^4+x^5+x^4+1=x^6(x^2+x+1)-x^4(x^2+x+1)+x^5+x^4+1 \\
+    &=x^6(x^2+x+1)-x^4(x^2+x+1)+x^5+x^4+x^3-x^3+1=x^6(x^2+x+1) \\
+    &\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }-x^4(x^2+x+1)+x^3(x^2+x+1)-x^3+1 \\
+    &=x^6(x^2+x+1)-x^4(x^2+x+1)+x^3(x^2+x+1)-(x-1)(x^2+x+1) \\
+    &=(x^2+x+1)(x^6-x^4+x^3-x+1) \\
+    &=31\cdot15121
+\end{align*}
+Therefore, the two prime factors are $\boxed{31 \text{ and } 15121}$.
+\end{solution}
+\end{document}

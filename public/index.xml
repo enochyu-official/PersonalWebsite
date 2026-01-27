@@ -2,58 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enoch Yu</title>
-    <link>https://enochyu.pages.dev/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Enoch Yu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://enochyu.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>https://enochyu.pages.dev/pages/about/</link>
+      <link>http://localhost:1313/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enochyu.pages.dev/pages/about/</guid>
+      <guid>http://localhost:1313/pages/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Activities</title>
-      <link>https://enochyu.pages.dev/pages/activities/</link>
+      <link>http://localhost:1313/pages/activities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enochyu.pages.dev/pages/activities/</guid>
+      <guid>http://localhost:1313/pages/activities/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://enochyu.pages.dev/pages/contact/</link>
+      <link>http://localhost:1313/pages/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enochyu.pages.dev/pages/contact/</guid>
+      <guid>http://localhost:1313/pages/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Honors</title>
-      <link>https://enochyu.pages.dev/pages/honors/</link>
+      <link>http://localhost:1313/pages/honors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enochyu.pages.dev/pages/honors/</guid>
+      <guid>http://localhost:1313/pages/honors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Independent Study</title>
+      <link>http://localhost:1313/pages/independent-study/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/independent-study/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>http://localhost:1313/pages/independent-study/math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/independent-study/math/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 1</title>
-      <link>https://enochyu.pages.dev/pages/projects/latex/ps01/</link>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enochyu.pages.dev/pages/projects/latex/ps01/</guid>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps02/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps03/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps04/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps05/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps06/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>https://enochyu.pages.dev/pages/projects/</link>
+      <link>http://localhost:1313/pages/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enochyu.pages.dev/pages/projects/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Solution Notes</title>
-      <link>https://enochyu.pages.dev/pages/projects/solution-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://enochyu.pages.dev/pages/projects/solution-notes/</guid>
+      <guid>http://localhost:1313/pages/projects/</guid>
       <description></description>
     </item>
   </channel>
