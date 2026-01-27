@@ -1,6 +1,140 @@
 ---
-title: "Problem Set 1"
+title: "Problem Set 6"
 layout: "single"
 ---
 
+<h1 class="unnumbered" id="probability-and-counting">Probability and
+Counting</h1>
+<p><span
+class="math display">$$\boxed{\text{Probability}=\frac{\text{cases
+\textbf{with} order}}{\text{total cases \textbf{with}
+order}}=\frac{\text{cases \textbf{without} order}}{\text{total cases
+\textbf{without} order}}}$$</span></p>
+<h2 class="unnumbered" id="example-i">Example I</h2>
+<p>There are three red coins and two blue coins. Find the probability of
+picking two coins that are the same color.<br />
+<br />
+<strong>Solution I: With Order</strong><br />
+Number of cases for choosing coins with same color: <span
+class="math inline">3 ⋅ 2 + 2 ⋅ 1</span><br />
+Total cases: <span class="math inline">5 ⋅ 4</span><br />
+<span class="math display">$$\therefore
+\frac{3\cdot2+2\cdot1}{5\cdot4}=\frac{8}{20}=\boxed{\frac{2}{5}}$$</span><br />
+<br />
+<strong>Solution II: Without Order</strong><br />
+Number of cases for choosing coins with same color: <span
+class="math inline"><sub>3</sub><em>C</em><sub>2</sub> + <sub>2</sub><em>C</em><sub>2</sub></span><br />
+Total cases: <span
+class="math inline"><sub>5</sub><em>C</em><sub>2</sub></span><br />
+<span class="math display">$$\therefore
+\frac{{}_3C_2+{}_2C_2}{{}_5C_2}=\frac{4}{10}=\boxed{\frac{2}{5}}$$</span><br />
+<br />
+To choose the best method to use to solve a problem depends on each
+problem. Counting with order may or may not be more convenient compared
+to counting without order.<br />
+<br />
+</p>
+<h2 class="unnumbered" id="example-ii">Example II</h2>
+<p>Five coins are tossed in the air simultaneously. What is the
+probability that there are two coins that landed on head?<br />
+<br />
+<strong>Solution I: With Order</strong><br />
+Number of cases of two coins landing on the head: <span
+class="math inline">$\frac{5!}{2!3!}$</span> (Arrangement of two heads
+and three tails)<br />
+Total cases: <span class="math inline">2<sup>5</sup></span> <span
+class="math display">$$\therefore
+\frac{\frac{5!}{2!3!}}{2^5}=\frac{10}{32}=\boxed{\frac{5}{16}}$$</span><br />
+<br />
+<strong>Solution II: Without Order</strong><br />
+Number of cases of two coins landing on the head: <span
+class="math inline"><sub>5</sub><em>C</em><sub>2</sub></span><br />
+Total cases: <span
+class="math inline"><sub>5</sub><em>C</em><sub>0</sub> + <sub>5</sub><em>C</em><sub>1</sub> + <sub>5</sub><em>C</em><sub>2</sub> + <sub>5</sub><em>C</em><sub>3</sub> + <sub>5</sub><em>C</em><sub>4</sub> + <sub>5</sub><em>C</em><sub>5</sub></span>
+<span class="math display">$$\therefore
+\frac{{}_5C_2}{{}_5C_0+{}_5C_1+{}_5C_2+{}_5C_3+{}_5C_4+{}_5C_5}=\frac{10}{2^5}=\boxed{\frac{5}{16}}$$</span><br />
+<br />
+In a more advanced problem, counting with order was more simple than
+counting without order.</p>
+<h1 class="unnumbered" id="problem">Problem</h1>
+<p>Your wardrobe contains two red socks, two green socks, two blue
+socks, and two yello socks. It is currently dark right now, but you
+decide to pair up the socks randomly. What is the probability that none
+of the pairs are of the same color?<br />
+<br />
+<strong>Key Word</strong> Counting Strategy, Principle of Inclusion and
+Exclusion<br />
+<br />
+<strong>Solution I: Without Order</strong><br />
+<br />
+Total case without order: <span
+class="math inline">$\frac{8!}{4!\cdot2^4}$</span><br />
+<br />
+Principle of Inclusion and Exclusion is applied for cases without
+order!! <span
+class="math display">$$\frac{8!}{4!\cdot2^4}-\frac{6!}{3!\cdot2^3}\cdot{}_4C_1+\frac{4!}{2!\cdot2^2}\cdot{}_4C_2-\frac{2!}{1!\cdot2^1}\cdot{}_4C_3+\frac{0!}{0!\cdot2^0}\cdot{}_4C_4=60$$</span>
+Therefore, <span
+class="math inline">$\frac{60}{105}=\boxed{\frac{4}{7}}$</span> ◻</p>
+<p><br />
+<br />
+<strong>Solution II: With Order</strong><br />
+<br />
+Let us count by letting that the number of cases does change when the
+arrangement of each pair change while the number remains the same if the
+arrangement occurred within a pair.<br />
+<br />
+Total possibility: <span
+class="math inline"><sub>8</sub><em>C</em><sub>2</sub> ⋅ <sub>6</sub><em>C</em><sub>2</sub> ⋅ <sub>4</sub><em>C</em><sub>2</sub> ⋅ <sub>2</sub><em>C</em><sub>2</sub></span><br />
+<br />
+For specific case, choose two groups from 4 types of socks, or <span
+class="math inline"><sub>4</sub><em>C</em><sub>2</sub></span>. Within
+each chosen pair, choose one socks each, or <span
+class="math inline"><sub>2</sub><em>C</em><sub>1</sub> ⋅ <sub>2</sub><em>C</em><sub>1</sub></span>.
+WLOG, the next three pairs may be chosen.<br />
+Case I: <span class="math inline">(1, 1)</span><br />
+<span
+class="math inline"><sub>2</sub><em>C</em><sub>1</sub> ⋅ <sub>2</sub><em>C</em><sub>1</sub> = 4</span><br />
+<br />
+Case II: <span class="math inline">(2, 1)</span><br />
+<span
+class="math inline"><sub>2</sub><em>C</em><sub>1</sub> ⋅ <sub>2</sub><em>C</em><sub>1</sub> ⋅ <sub>2</sub><em>C</em><sub>1</sub> ⋅ <sub>2</sub><em>C</em><sub>1</sub> ⋅ <sub>2</sub><em>C</em><sub>1</sub> = 32</span><br />
+<br />
+Case III: <span class="math inline">(2, 2)</span><br />
+<span
+class="math inline"><sub>2</sub><em>C</em><sub>1</sub> ⋅ <sub>2</sub><em>C</em><sub>1</sub> ⋅ <sub>4</sub><em>C</em><sub>2</sub> = 24</span><br />
+<br />
+<span class="math inline">$\therefore
+\frac{{}_4C_2\cdot{}_2C_1\cdot{}_2C_1(4+32+24)}{{}_8C_2\cdot{}_6C_2\cdot{}_4C_2\cdot{}_2C_2}=\boxed{\frac{4}{7}}$</span>
+◻<br />
+<br />
+<br />
+If the number of cases increase, PIE, or Solution I, must be
+utilized.</p>
+<h1 class="unnumbered" id="problem-1">Problem</h1>
+<p>Given that <span
+class="math inline">468751 = 5<sup>8</sup> + 5<sup>7</sup> + 1</span> is
+a product of two primes, find both of them.</p>
+<div class="trivlist">
+<p><span><strong>Solution</strong></span> Let <span
+class="math inline"><em>x</em> = 5</span> <span
+class="math display">$$\begin{align*}
+    x^8+x^7+1&amp;=x^8+x^7+x^6-x^6+1=x^6(x^2+x+1)-x^6+1 \\
+    &amp;=x^6(x^2+x+1)-x^6-x^5-x^4+x^5+x^4+1=x^6(x^2+x+1)-x^4(x^2+x+1)+x^5+x^4+1
+\\
+    &amp;=x^6(x^2+x+1)-x^4(x^2+x+1)+x^5+x^4+x^3-x^3+1=x^6(x^2+x+1) \\
+    &amp;\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{
+}\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{
+}\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{
+}\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{
+}\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{
+}\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{
+}\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{
+}\text{ }\text{ }\text{ }\text{ }\text{
+}-x^4(x^2+x+1)+x^3(x^2+x+1)-x^3+1 \\
+    &amp;=x^6(x^2+x+1)-x^4(x^2+x+1)+x^3(x^2+x+1)-(x-1)(x^2+x+1) \\
+    &amp;=(x^2+x+1)(x^6-x^4+x^3-x+1) \\
+    &amp;=31\cdot15121
+\end{align*}$$</span> Therefore, the two prime factors are <span
+class="math inline">$\boxed{31 \text{ and } 15121}$</span>. ◻</p>
+</div>
 
