@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-caption {
+#projectList caption {
   text-align: center;
   font-weight: bold;
   color: #0B1E38;
@@ -14,12 +14,30 @@ caption {
 table {
   border-collapse: collapse;
   border: 2px solid #e5e5e5;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+td {
+  color: whitesmoke;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+}
+
+a {
+  color: #fe5f55;
+}
+
+#projectList table {
+  border-collapse: collapse;
+  border: 2px solid #e5e5e5;
   width: 100%;
   text-align: center;
 }
 
 @media (max-width: 600px) {
-  table {
+  #projectList table {
     display: table;
     table-layout: fixed;
     word-wrap: break-word;
@@ -28,12 +46,16 @@ table {
     max-width: 90vw;
   }
 
-  caption { font-size: 18px !important; }
-  table th {
+  #projectList caption { font-size: 18px !important; }
+
+  #projectList table,
+  #projectList th {
     font-size: 12px !important;
     padding: 5px 3px;
   }
-  table td {
+
+  #projectList table,
+  #projectList td {
     font-size: 10px !important;
     padding: 5px 3px;
   }
@@ -41,24 +63,25 @@ table {
 
 
 @media (max-width: 768px) {
-   table {
+   #projectList table {
     border-collapse: collapse;
     border: 2px solid #e5e5e5;
     width: 90%;
   }
 
-  caption { font-size: 24px; }
-  table { font-size: 18px; }
+  #projectList caption { font-size: 24px; }
+  #projectList table { font-size: 18px; }
 }
 
 
-th, td {
+#projectList th,
+#projectList td {
   color: #14213d;
   border: 1px solid #e5e5e5;
   padding: 20px;
 }
 
-a {
+#projectList a {
   color: #fe5f55;
 }
 

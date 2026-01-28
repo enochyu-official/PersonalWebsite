@@ -1,0 +1,185 @@
+<h1 class="unnumbered" id="amc-12b-problem-15">2022 AMC 12B Problem
+15</h1>
+<p>One of the following numbers is not divisible by any prime number
+less than <span class="math inline">10</span>. Which is it?<br />
+<br />
+<span class="math inline"><strong>(A)
+</strong>2<sup>606</sup> − 1   <strong>(B)
+</strong>2<sup>606</sup> + 1   <strong>(C)
+</strong>2<sup>607</sup> − 1   <strong>(D)
+</strong>2<sup>607</sup> + 1   <strong>(E)
+</strong>2<sup>607</sup> + 3<sup>607</sup></span></p>
+<div class="trivlist">
+<p><span><strong>Solution</strong></span><br />
+<br />
+<strong>Key Word</strong> Property of Modular Arithmetic, Euler’s
+Theorem<br />
+<br />
+<strong>Choice (A)</strong>:<br />
+<span class="math display">$$\begin{align*}
+2^{606}-1&amp;\equiv(-1)^{606}-1 \pmod{3} \\
+&amp;\equiv0\pmod3
+\end{align*}$$</span> <strong>Choice (B)</strong>: <span
+class="math display">$$\begin{align*}
+2^{\varphi(5)}&amp;\equiv1 \pmod{5} \\
+2^{4}&amp;\equiv1 \pmod{5} \\
+2^{604}&amp;\equiv1 \pmod{5} \\
+2^{606}&amp;\equiv4 \pmod{5} \\
+2^{606}+1&amp;\equiv0 \pmod{5}
+\end{align*}$$</span> <strong>Choice (C)</strong>:<br />
+</p>
+<div class="minipage">
+<p><span class="math display">$$\begin{align*}
+    2^{\varphi(3)}&amp;\equiv1 \pmod{3} \\
+    2^{2}&amp;\equiv1 \pmod{3} \\
+    2^{607}&amp;\equiv2 \pmod{3} \\
+    2^{607}-1&amp;\equiv1 \pmod{3}
+\end{align*}$$</span></p>
+</div>
+<div class="minipage">
+<p><span class="math display">$$\begin{align*}
+    2^{\varphi(5)}&amp;\equiv1 \pmod{5} \\
+    2^{4}&amp;\equiv1 \pmod{5} \\
+    2^{604}&amp;\equiv1 \pmod{5} \\
+    2^{607}-1&amp;\equiv7 \pmod{5}
+\end{align*}$$</span></p>
+</div>
+<div class="minipage">
+<p><span class="math display">$$\begin{align*}
+    2^{\varphi(7)}&amp;\equiv1 \pmod{7} \\
+    2^{6}&amp;\equiv1 \pmod{7} \\
+    2^{606}&amp;\equiv1 \pmod{7} \\
+    2^{607}-1&amp;\equiv1 \pmod{7}
+\end{align*}$$</span></p>
+</div>
+<p><br />
+<br />
+<br />
+Therefore, <span class="math inline">$\boxed{\textbf{(C) }
+2^{607}-1}$</span> is not divisible by any prime number less than 10.
+◻</p>
+</div>
+<h1 class="unnumbered" id="amc-12b-problem-20">2022 AMC 12B Problem
+20</h1>
+<p>Let <span class="math inline"><em>P</em>(<em>x</em>)</span> be a
+polynomial with rational coefficients such that when <span
+class="math inline"><em>P</em>(<em>x</em>)</span> is divided by the
+polynomial <span
+class="math inline"><em>x</em><sup>2</sup> + <em>x</em> + 1</span>, the
+remainder is <span class="math inline"><em>x</em> + 2</span>, and when
+<span class="math inline"><em>P</em>(<em>x</em>)</span> is divided by
+the polynomial <span
+class="math inline"><em>x</em><sup>2</sup> + 1</span>, the remainder is
+<span class="math inline">2<em>x</em> + 1</span>. There is a unique
+polynomial of least degree with these two properties. What is the sum of
+the squares of the coefficients of that polynomial?<br />
+<br />
+<span class="math inline"><strong>(A) </strong>10   <strong>(B)
+</strong>13   <strong>(C) </strong>19   <strong>(D)
+</strong>20   <strong>(E) </strong>23</span></p>
+<div class="trivlist">
+<p><span><strong>Solution</strong></span><br />
+<br />
+<strong>Key Word</strong> Property of Modular Arithmetic<br />
+<br />
+First and foremost, the provided condition may be written. <span
+class="math display">$$\begin{align*}
+    P(x)&amp;\equiv x+2 \pmod{x^2+x+1} \\
+    P(x)&amp;\equiv 2x+1 \pmod{x^2+1} \\
+\end{align*}$$</span> The relationship between the first and the second
+condition could be found. <span class="math display">$$\begin{align*}
+    (x^2+x+1)k+x+2&amp;\equiv2x+1\pmod{x^2+1} \\
+    (x^2+x+1)k&amp;\equiv x-1\pmod{x^2+1} \\
+    (x^2+x+1)k&amp;\equiv x^2+x\pmod{x^2+1} \\
+    (x^2+1)k+xk&amp;\equiv x^2+x \pmod{x^2+1} \\
+    xk&amp;\equiv x^2+x \pmod{x^2+1} \\
+    k&amp;\equiv x+1 \pmod{x^2+1} \\
+\end{align*}$$</span> <span class="math inline"><em>k</em></span> could
+be rewritten as <span
+class="math inline"><em>k</em> = (<em>x</em><sup>2</sup> + 1)<em>k</em><sup>′</sup> + <em>x</em> + 1</span>.
+Therefore, <span
+class="math inline"><em>P</em>(<em>x</em>) = (<em>x</em><sup>2</sup> + <em>x</em> + 1)(<em>x</em><sup>2</sup> + 1)<em>k</em><sup>′</sup> + (<em>x</em><sup>2</sup> + <em>x</em> + 1)(<em>x</em> + 1) + <em>x</em> + 2</span>.
+The degree of <span class="math inline"><em>P</em>(<em>x</em>)</span> is
+minimum when <span
+class="math inline"><em>k</em><sup>′</sup> = 0</span>. Thereby, <span
+class="math inline"><em>P</em>(<em>x</em>) = (<em>x</em><sup>2</sup> + <em>x</em> + 1)(<em>x</em> + 1) + <em>x</em> + 2 = <em>x</em><sup>3</sup> + 2<em>x</em><sup>2</sup> + 3<em>x</em> + 3</span>.
+Thus, <span class="math inline">$1^1+2^2+3^2+3^2=\boxed{\textbf{E)
+}23}$</span>. ◻</p>
+</div>
+<h1 class="unnumbered" id="amc-12b-problem-23">2022 AMC 12B Problem
+23</h1>
+<p>Let <span
+class="math inline"><em>x</em><sub>0</sub>, <em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …</span>
+be a sequence of numbers, where each <span
+class="math inline"><em>x</em><sub><em>k</em></sub></span> is either
+<span class="math inline">0</span> or <span
+class="math inline">1</span>. For each positive integer <span
+class="math inline"><em>n</em></span>, define<span
+class="math display">$$S_n = \sum_{k=0}^{n-1} x_k 2^k$$</span>Suppose
+<span
+class="math inline">7<em>S</em><sub><em>n</em></sub> ≡ 1 (mod  2<sup><em>n</em></sup>)</span>
+for all <span class="math inline"><em>n</em> ≥ 1</span>. What is the
+value of the sum<span
+class="math display"><em>x</em><sub>2019</sub> + 2<em>x</em><sub>2020</sub> + 4<em>x</em><sub>2021</sub> + 8<em>x</em><sub>2022</sub>?</span><br />
+<span class="math inline"><strong>(A) </strong>6   <strong>(B)
+</strong>7   <strong>(C) </strong>12   <strong>(D)
+</strong>14   <strong>(E) </strong>15</span></p>
+<div class="trivlist">
+<p><span><strong>Solution</strong></span><br />
+<br />
+<strong>Key Word</strong> Trial and Error, Euler’s Theorem<br />
+<br />
+Using the given conditions, it is evident that <span
+class="math inline">$x_{2019} + 2x_{2020} + 4x_{2021} +
+8x_{2022}=\frac{S_{2023}-S_{2019}}{2^{2019}}=a$</span> (for simplicity).
+Moreover, because <span
+class="math inline">7<em>S</em><sub><em>n</em></sub> ≡ 1 (mod  2<sup><em>n</em></sup>)</span>
+is true, an impulse to multiply the numerator and denominator by 7 is
+created. Let <span
+class="math inline">7<em>S</em><sub>2023</sub> = 2<sup>2023</sup><em>k</em> + 1</span>
+and <span
+class="math inline">7<em>S</em><sub>2019</sub> = 2<sup>2019</sup><em>k</em><sup>′</sup> + 1</span>.
+<span class="math display">$$\begin{align*}
+a=\frac{7S_{2023}-7S_{2019}}{7\cdot2^{2019}}&amp;=\frac{2^{2023}k+1-2^{2019}k'-1}{7\cdot2^{2019}}
+\\
+&amp;=\frac{2^4k-k'}{7} \\
+&amp;=\frac{16k-k'}{7}
+\end{align*}$$</span> Furthermore, because <span
+class="math inline">0 ≤ <em>x</em><sub>2019</sub> + 2<em>x</em><sub>2020</sub> + 4<em>x</em><sub>2021</sub> + 8<em>x</em><sub>2022</sub> ≤ 15</span>,
+<span class="math inline">$0\le\frac{16k-k'}{7}\le15$</span>. The order
+pairs <span
+class="math inline">(<em>k</em>, <em>k</em><sup>′</sup>)</span> could be
+found through trial and error that satisfies conditions <span
+class="math inline">7<em>S</em><sub>2023</sub> = 2<sup>2023</sup><em>k</em> + 1</span>
+and <span
+class="math inline">7<em>S</em><sub>2019</sub> = 2<sup>2019</sup><em>k</em><sup>′</sup> + 1</span>.
+It is evident that <span class="math inline"><em>k</em> ≠ 0, 1, 2</span>
+using Euler’s Theorem.</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">k</th>
+<th style="text-align: center;">k’</th>
+<th style="text-align: center;">a</th>
+<th style="text-align: center;">Validity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Thereby, <span class="math inline">$x_{2019} + 2x_{2020} + 4x_{2021}
++ 8x_{2022}=\boxed{\textbf{(A) } 6}$</span>. ◻</p>
+</div>
+<p>Uploaded a <a
+href="https://artofproblemsolving.com/wiki/index.php/2022_AMC_10B_Problems/Problem_25#Solution_6">new
+solution</a> in AOPS!!<br />
+</p>
+

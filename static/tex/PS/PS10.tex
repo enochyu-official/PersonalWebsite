@@ -1,0 +1,156 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric}
+\usepackage{tkz-euclide}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 10}
+\author{Enoch Yu}
+\date{May 2025}
+
+\begin{document}
+
+\section*{2022 AMC 12B Problem 15}
+One of the following numbers is not divisible by any prime number less than $10$. Which is it?
+\\\\
+$\textbf{(A) } 2^{606}-1 \qquad\textbf{(B) } 2^{606}+1 \qquad\textbf{(C) } 2^{607}-1 \qquad\textbf{(D) } 2^{607}+1\qquad\textbf{(E) } 2^{607}+3^{607}$
+\begin{solution}
+\\\\
+\textbf{Key Word} Property of Modular Arithmetic, Euler's Theorem
+\\\\
+\textbf{Choice (A)}: \\
+\begin{align*}
+2^{606}-1&\equiv(-1)^{606}-1 \pmod{3} \\
+&\equiv0\pmod3
+\end{align*}
+\textbf{Choice (B)}:
+\begin{align*}
+2^{\varphi(5)}&\equiv1 \pmod{5} \\
+2^{4}&\equiv1 \pmod{5} \\
+2^{604}&\equiv1 \pmod{5} \\
+2^{606}&\equiv4 \pmod{5} \\
+2^{606}+1&\equiv0 \pmod{5}
+\end{align*}
+\textbf{Choice (C)}: \\
+\begin{minipage}{0.33333333\textwidth}
+\begin{align*}
+    2^{\varphi(3)}&\equiv1 \pmod{3} \\
+    2^{2}&\equiv1 \pmod{3} \\
+    2^{607}&\equiv2 \pmod{3} \\
+    2^{607}-1&\equiv1 \pmod{3}
+\end{align*}
+\end{minipage}
+\begin{minipage}{0.33333333\textwidth}
+\begin{align*}
+    2^{\varphi(5)}&\equiv1 \pmod{5} \\
+    2^{4}&\equiv1 \pmod{5} \\
+    2^{604}&\equiv1 \pmod{5} \\
+    2^{607}-1&\equiv7 \pmod{5}
+\end{align*}
+\end{minipage}
+\begin{minipage}{0.33333333\textwidth}
+\begin{align*}
+    2^{\varphi(7)}&\equiv1 \pmod{7} \\
+    2^{6}&\equiv1 \pmod{7} \\
+    2^{606}&\equiv1 \pmod{7} \\
+    2^{607}-1&\equiv1 \pmod{7}
+\end{align*}
+\end{minipage}
+\\\\\\
+Therefore, $\boxed{\textbf{(C) } 2^{607}-1}$ is not divisible by any prime number less than 10.
+\end{solution}
+
+\newpage
+\section*{2022 AMC 12B Problem 20}
+Let $P(x)$ be a polynomial with rational coefficients such that when $P(x)$ is divided by the polynomial $x^2 + x + 1$, the remainder is $x + 2$, and when $P(x)$ is divided by the polynomial $x^2 + 1$, the remainder is $2x + 1$. There is a unique polynomial of least degree with these two properties. What is the sum of the squares of the coefficients of that polynomial?
+\\\\
+$\textbf{(A) } 10 \qquad \textbf{(B) } 13 \qquad \textbf{(C) } 19 \qquad \textbf{(D) } 20 \qquad \textbf{(E) } 23$
+\begin{solution}
+\\\\
+\textbf{Key Word} Property of Modular Arithmetic
+\\\\
+First and foremost, the provided condition may be written.
+\begin{align*}
+    P(x)&\equiv x+2 \pmod{x^2+x+1} \\
+    P(x)&\equiv 2x+1 \pmod{x^2+1} \\
+\end{align*}
+The relationship between the first and the second condition could be found.
+\begin{align*}
+    (x^2+x+1)k+x+2&\equiv2x+1\pmod{x^2+1} \\
+    (x^2+x+1)k&\equiv x-1\pmod{x^2+1} \\
+    (x^2+x+1)k&\equiv x^2+x\pmod{x^2+1} \\
+    (x^2+1)k+xk&\equiv x^2+x \pmod{x^2+1} \\
+    xk&\equiv x^2+x \pmod{x^2+1} \\
+    k&\equiv x+1 \pmod{x^2+1} \\
+\end{align*}
+$k$ could be rewritten as $k=(x^2+1)k'+x+1$. Therefore, $P(x)=(x^2+x+1)(x^2+1)k'+(x^2+x+1)(x+1)+x+2$. The degree of $P(x)$ is minimum when $k'=0$. Thereby, $P(x)=(x^2+x+1)(x+1)+x+2=x^3+2x^2+3x+3$. Thus, $1^1+2^2+3^2+3^2=\boxed{\textbf{E) }23}$.
+\end{solution}
+
+\newpage
+\section*{2022 AMC 12B Problem 23}
+Let $x_0,x_1,x_2,\dotsc$ be a sequence of numbers, where each $x_k$ is either $0$ or $1$. For each positive integer $n$, define\[S_n = \sum_{k=0}^{n-1} x_k 2^k\]Suppose $7S_n \equiv 1 \pmod{2^n}$ for all $n \geq 1$. What is the value of the sum\[x_{2019} + 2x_{2020} + 4x_{2021} + 8x_{2022}?\] \\
+$\textbf{(A) } 6 \qquad \textbf{(B) } 7 \qquad \textbf{(C) }12\qquad \textbf{(D) } 14\qquad \textbf{(E) }15$
+\begin{solution}
+\\\\
+\textbf{Key Word} Trial and Error, Euler's Theorem
+\\\\
+Using the given conditions, it is evident that $x_{2019} + 2x_{2020} + 4x_{2021} + 8x_{2022}=\frac{S_{2023}-S_{2019}}{2^{2019}}=a$ (for simplicity). Moreover, because $7S_n \equiv 1 \pmod{2^n}$ is true, an impulse to multiply the numerator and denominator by 7 is created. Let $7S_{2023}=2^{2023}k+1$ and $7S_{2019}=2^{2019}k'+1$.
+\begin{align*}
+a=\frac{7S_{2023}-7S_{2019}}{7\cdot2^{2019}}&=\frac{2^{2023}k+1-2^{2019}k'-1}{7\cdot2^{2019}} \\
+&=\frac{2^4k-k'}{7} \\
+&=\frac{16k-k'}{7}
+\end{align*}
+Furthermore, because $0\le x_{2019} + 2x_{2020} + 4x_{2021} + 8x_{2022}\le15$, $0\le\frac{16k-k'}{7}\le15$. The order pairs $(k,k')$ could be found through trial and error that satisfies conditions $7S_{2023}=2^{2023}k+1$ and $7S_{2019}=2^{2019}k'+1$. It is evident that $k\ne0,1,2$ using Euler's Theorem.
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ccc|c}
+    k & k' & a & Validity \\
+    \hline
+    3 & 6 & 6 & Yes \text{ ($\because 7|2^{2023}\cdot3+1$ and $7|2^{2019}\cdot6$)}
+\end{tabular}
+\end{center}
+Thereby, $x_{2019} + 2x_{2020} + 4x_{2021} + 8x_{2022}=\boxed{\textbf{(A) } 6}$.
+\end{solution}
+Uploaded a \href{https://artofproblemsolving.com/wiki/index.php/2022_AMC_10B_Problems/Problem_25#Solution_6}{new solution} in AOPS!! \\
+
+\end{document}

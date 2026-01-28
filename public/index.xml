@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps10/</guid>
+      <description>&lt;h1 class=&#34;unnumbered&#34; id=&#34;amc-12b-problem-15&#34;&gt;2022 AMC 12B Problem&#xA;15&lt;/h1&gt;&#xA;&lt;p&gt;One of the following numbers is not divisible by any prime number&#xA;less than &lt;span class=&#34;math inline&#34;&gt;10&lt;/span&gt;. Which is it?&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;span class=&#34;math inline&#34;&gt;&lt;strong&gt;(A)&#xA;&lt;/strong&gt;2&lt;sup&gt;606&lt;/sup&gt; − 1   &lt;strong&gt;(B)&#xA;&lt;/strong&gt;2&lt;sup&gt;606&lt;/sup&gt; + 1   &lt;strong&gt;(C)&#xA;&lt;/strong&gt;2&lt;sup&gt;607&lt;/sup&gt; − 1   &lt;strong&gt;(D)&#xA;&lt;/strong&gt;2&lt;sup&gt;607&lt;/sup&gt; + 1   &lt;strong&gt;(E)&#xA;&lt;/strong&gt;2&lt;sup&gt;607&lt;/sup&gt; + 3&lt;sup&gt;607&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;trivlist&#34;&gt;&#xA;&lt;p&gt;&lt;span&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;strong&gt;Key Word&lt;/strong&gt; Property of Modular Arithmetic, Euler’s&#xA;Theorem&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;strong&gt;Choice (A)&lt;/strong&gt;:&lt;br /&gt;&#xA;&lt;span class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;2^{606}-1&amp;amp;\equiv(-1)^{606}-1 \pmod{3} \\&#xA;&amp;amp;\equiv0\pmod3&#xA;\end{align*}$$&lt;/span&gt; &lt;strong&gt;Choice (B)&lt;/strong&gt;: &lt;span&#xA;class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;2^{\varphi(5)}&amp;amp;\equiv1 \pmod{5} \\&#xA;2^{4}&amp;amp;\equiv1 \pmod{5} \\&#xA;2^{604}&amp;amp;\equiv1 \pmod{5} \\&#xA;2^{606}&amp;amp;\equiv4 \pmod{5} \\&#xA;2^{606}+1&amp;amp;\equiv0 \pmod{5}&#xA;\end{align*}$$&lt;/span&gt; &lt;strong&gt;Choice (C)&lt;/strong&gt;:&lt;br /&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>About Me</title>
       <link>http://localhost:1313/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
