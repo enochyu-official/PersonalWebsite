@@ -25,6 +25,10 @@
 \newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
             \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
 
+\pdfinfo{
+  /Title (Problem Set 6)
+}
+
 \title{Problem Set 6}
 \author{Enoch Yu}
 \date{May 2025}

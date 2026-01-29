@@ -20,6 +20,10 @@
 \newtheorem{corollary}{Corollary}[theorem]
 \newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
 
+\pdfinfo{
+  /Title (Problem Set 2)
+}
+
 \title{Problem Set 2}
 \author{Enoch Yu}
 \date{April 2025}
