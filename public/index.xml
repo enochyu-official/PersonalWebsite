@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enoch Yu</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Enoch Yu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Activities</title>
+      <link>http://localhost:1313/pages/activities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/activities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/pages/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Honors</title>
+      <link>http://localhost:1313/pages/honors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/honors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Independent Study</title>
+      <link>http://localhost:1313/pages/independent-study/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/independent-study/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>http://localhost:1313/pages/independent-study/math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/independent-study/math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps03/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps04/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 1</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps05/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 10</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps10/</guid>
+      <description>&lt;h1 class=&#34;unnumbered&#34; id=&#34;amc-12b-problem-15&#34;&gt;2022 AMC 12B Problem&#xA;15&lt;/h1&gt;&#xA;&lt;p&gt;One of the following numbers is not divisible by any prime number&#xA;less than &lt;span class=&#34;math inline&#34;&gt;10&lt;/span&gt;. Which is it?&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;span class=&#34;math inline&#34;&gt;&lt;strong&gt;(A)&#xA;&lt;/strong&gt;2&lt;sup&gt;606&lt;/sup&gt; − 1   &lt;strong&gt;(B)&#xA;&lt;/strong&gt;2&lt;sup&gt;606&lt;/sup&gt; + 1   &lt;strong&gt;(C)&#xA;&lt;/strong&gt;2&lt;sup&gt;607&lt;/sup&gt; − 1   &lt;strong&gt;(D)&#xA;&lt;/strong&gt;2&lt;sup&gt;607&lt;/sup&gt; + 1   &lt;strong&gt;(E)&#xA;&lt;/strong&gt;2&lt;sup&gt;607&lt;/sup&gt; + 3&lt;sup&gt;607&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;trivlist&#34;&gt;&#xA;&lt;p&gt;&lt;span&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;strong&gt;Key Word&lt;/strong&gt; Property of Modular Arithmetic, Euler’s&#xA;Theorem&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;strong&gt;Choice (A)&lt;/strong&gt;:&lt;br /&gt;&#xA;&lt;span class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;2^{606}-1&amp;amp;\equiv(-1)^{606}-1 \pmod{3} \\&#xA;&amp;amp;\equiv0\pmod3&#xA;\end{align*}$$&lt;/span&gt; &lt;strong&gt;Choice (B)&lt;/strong&gt;: &lt;span&#xA;class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;2^{\varphi(5)}&amp;amp;\equiv1 \pmod{5} \\&#xA;2^{4}&amp;amp;\equiv1 \pmod{5} \\&#xA;2^{604}&amp;amp;\equiv1 \pmod{5} \\&#xA;2^{606}&amp;amp;\equiv4 \pmod{5} \\&#xA;2^{606}+1&amp;amp;\equiv0 \pmod{5}&#xA;\end{align*}$$&lt;/span&gt; &lt;strong&gt;Choice (C)&lt;/strong&gt;:&lt;br /&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 11</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps11/</guid>
+      <description>&lt;h1 class=&#34;unnumbered&#34; id=&#34;amc-12b-problem-17&#34;&gt;2022 AMC 12B Problem&#xA;17&lt;/h1&gt;&#xA;&lt;p&gt;How many &lt;span class=&#34;math inline&#34;&gt;4 × 4&lt;/span&gt; arrays whose entries&#xA;are &lt;span class=&#34;math inline&#34;&gt;0&lt;/span&gt;s and &lt;span&#xA;class=&#34;math inline&#34;&gt;1&lt;/span&gt;s are there such that the row sums (the sum&#xA;of the entries in each row) are &lt;span&#xA;class=&#34;math inline&#34;&gt;1, 2, 3,&lt;/span&gt; and &lt;span&#xA;class=&#34;math inline&#34;&gt;4,&lt;/span&gt; in some order, and the column sums (the&#xA;sum of the entries in each column) are also &lt;span&#xA;class=&#34;math inline&#34;&gt;1, 2, 3,&lt;/span&gt; and &lt;span&#xA;class=&#34;math inline&#34;&gt;4,&lt;/span&gt; in some order? For example, the array&#xA;&lt;span class=&#34;math display&#34;&gt;$$\left[&#xA;\begin{array}{cccc}&#xA;    1 &amp;amp; 1 &amp;amp; 1 &amp;amp; 0 \\&#xA;    0 &amp;amp; 1 &amp;amp; 1 &amp;amp; 0 \\&#xA;    1 &amp;amp; 1 &amp;amp; 1 &amp;amp; 1 \\&#xA;    0 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 \\&#xA;\end{array}&#xA;\right]$$&lt;/span&gt; satisfies the condition.&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;span class=&#34;math inline&#34;&gt;&lt;strong&gt;(A) &lt;/strong&gt;144   &lt;strong&gt;(B)&#xA;&lt;/strong&gt;240   &lt;strong&gt;(C) &lt;/strong&gt;336   &lt;strong&gt;(D)&#xA;&lt;/strong&gt;576   &lt;strong&gt;(E) &lt;/strong&gt;624&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 2</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps02/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Set 6</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps06/</guid>
+      <description>&lt;h1 class=&#34;unnumbered&#34; id=&#34;probability-and-counting&#34;&gt;Probability and&#xA;Counting&lt;/h1&gt;&#xA;&lt;p&gt;&lt;span&#xA;class=&#34;math display&#34;&gt;$$\boxed{\text{Probability}=\frac{\text{cases&#xA;\textbf{with} order}}{\text{total cases \textbf{with}&#xA;order}}=\frac{\text{cases \textbf{without} order}}{\text{total cases&#xA;\textbf{without} order}}}$$&lt;/span&gt;&lt;/p&gt;&#xA;&lt;h2 class=&#34;unnumbered&#34; id=&#34;example-i&#34;&gt;Example I&lt;/h2&gt;&#xA;&lt;p&gt;There are three red coins and two blue coins. Find the probability of&#xA;picking two coins that are the same color.&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;strong&gt;Solution I: With Order&lt;/strong&gt;&lt;br /&gt;&#xA;Number of cases for choosing coins with same color: &lt;span&#xA;class=&#34;math inline&#34;&gt;3 ⋅ 2 + 2 ⋅ 1&lt;/span&gt;&lt;br /&gt;&#xA;Total cases: &lt;span class=&#34;math inline&#34;&gt;5 ⋅ 4&lt;/span&gt;&lt;br /&gt;&#xA;&lt;span class=&#34;math display&#34;&gt;$$\therefore&#xA;\frac{3\cdot2+2\cdot1}{5\cdot4}=\frac{8}{20}=\boxed{\frac{2}{5}}$$&lt;/span&gt;&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;strong&gt;Solution II: Without Order&lt;/strong&gt;&lt;br /&gt;&#xA;Number of cases for choosing coins with same color: &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; + &lt;sub&gt;2&lt;/sub&gt;&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;&lt;br /&gt;&#xA;Total cases: &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;sub&gt;5&lt;/sub&gt;&lt;em&gt;C&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;&lt;br /&gt;&#xA;&lt;span class=&#34;math display&#34;&gt;$$\therefore&#xA;\frac{{}_3C_2+{}_2C_2}{{}_5C_2}=\frac{4}{10}=\boxed{\frac{2}{5}}$$&lt;/span&gt;&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;To choose the best method to use to solve a problem depends on each&#xA;problem. Counting with order may or may not be more convenient compared&#xA;to counting without order.&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem Set 7</title>
+      <link>http://localhost:1313/pages/articles/independent-study/math/ps07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/articles/independent-study/math/ps07/</guid>
+      <description>&lt;h1 class=&#34;unnumbered&#34; id=&#34;hkimo-prelim-problem-20&#34;&gt;2020 HKIMO Prelim&#xA;Problem 20&lt;/h1&gt;&#xA;&lt;p&gt;Consider the Fibonacci sequence &lt;span&#xA;class=&#34;math inline&#34;&gt;1, 1, 2, 3, 5, 8, 13, …&lt;/span&gt;. What are the last&#xA;three digits (from left to right) of the &lt;span&#xA;class=&#34;math inline&#34;&gt;2020&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; term?&lt;/p&gt;&#xA;&lt;div class=&#34;trivlist&#34;&gt;&#xA;&lt;p&gt;&lt;span&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;strong&gt;Key Word&lt;/strong&gt; Implicit Form for Fibonacci Sequence, Binomial&#xA;Expansion, Induction, Euler’s Theorem, Property of Modular&#xA;Arithmetic&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;The implicit form for Fibonacci Sequence is known to be &lt;span&#xA;class=&#34;math inline&#34;&gt;$F_n=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n-\frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^n$&lt;/span&gt;.&#xA;In another words, the last three digits of &lt;span&#xA;class=&#34;math display&#34;&gt;$$F_{2020}=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^{2020}-\frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^{2020}$$&lt;/span&gt;&#xA;must be computed.&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;Binomial expansion could be utilized to effectively expand &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;sub&gt;2020&lt;/sub&gt;&lt;/span&gt;. &lt;span&#xA;class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    \frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\left(1+\sqrt{5}\right)^{2020}&amp;amp;=\frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\left({}_{2020}C_{0}\cdot1^{2020}\cdot(\sqrt{5})^0+{}_{2020}C_{1}\cdot1^{2019}\cdot(\sqrt{5})^1+\dots+{}_{2020}C_{2020}\cdot1^{0}\cdot(\sqrt{5})^{2020}\right)&#xA;\\&#xA;    \frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\left(1-\sqrt{5}\right)^{2020}&amp;amp;=\frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\left({}_{2020}C_{0}\cdot1^{2020}\cdot(\sqrt{5})^0-{}_{2020}C_{1}\cdot1^{2019}\cdot(\sqrt{5})^1+\dots+{}_{2020}C_{2020}\cdot1^{0}\cdot(\sqrt{5})^{2020}\right)&#xA;\\&#xA;    F_{2020}&amp;amp;=\frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\cdot2\left({}_{2020}C_{1}\cdot1^{2019}\cdot(\sqrt{5})^1+{}_{2020}C_{3}\cdot1^{2017}\cdot(\sqrt{5})^3+\dots+{}_{2020}C_{2019}\cdot1^{1}\cdot(\sqrt{5})^{2019}\right)&#xA;\\&#xA;    &amp;amp;=\frac{1}{2^{2019}}\left({}_{2020}C_{1}\cdot(\sqrt{5})^0+{}_{2020}C_{3}\cdot(\sqrt{5})^2+\dots+{}_{2020}C_{2019}\cdot(\sqrt{5})^{2018}\right)&#xA;\end{align*}$$&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt;&#xA;represents the last three digits of the &lt;span&#xA;class=&#34;math inline&#34;&gt;2020&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; term in the following&#xA;equation. &lt;span&#xA;class=&#34;math display&#34;&gt;&lt;em&gt;F&lt;/em&gt;&lt;sub&gt;2020&lt;/sub&gt; ≡ &lt;em&gt;a&lt;/em&gt; (mod  1000)&lt;/span&gt;&#xA;Because &lt;span&#xA;class=&#34;math inline&#34;&gt;1000 = 2&lt;sup&gt;3&lt;/sup&gt; ⋅ 5&lt;sup&gt;3&lt;/sup&gt;&lt;/span&gt;, the&#xA;condition above may be split. &lt;span&#xA;class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    F_{2020} &amp;amp;\equiv b \pmod{8} \\&#xA;    F_{2020} &amp;amp;\equiv c \pmod{125} \\&#xA;\end{align*}$$&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/pages/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/projects/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

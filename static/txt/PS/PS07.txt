@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric}
+\usepackage{tkz-euclide}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 7}
+\author{Enoch Yu}
+\date{May 2025}
+
+\begin{document}
+
+\section*{2020 HKIMO Prelim Problem 20}
+Consider the Fibonacci sequence $1,1,2,3,5,8,13,\dots$. What are the last three digits (from left to right) of the $2020^{\text{th}}$ term?
+\begin{solution}
+\\\\
+\textbf{Key Word} Implicit Form for Fibonacci Sequence, Binomial Expansion, Induction, Euler's Theorem, Property of Modular Arithmetic
+\\\\
+The implicit form for Fibonacci Sequence is known to be $F_n=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n-\frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^n$. In another words, the last three digits of 
+\[
+F_{2020}=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^{2020}-\frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^{2020}
+\]
+must be computed.
+\\\\
+Binomial expansion could be utilized to effectively expand $F_{2020}$.
+\begin{align*}
+    \frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\left(1+\sqrt{5}\right)^{2020}&=\frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\left({}_{2020}C_{0}\cdot1^{2020}\cdot(\sqrt{5})^0+{}_{2020}C_{1}\cdot1^{2019}\cdot(\sqrt{5})^1+\dots+{}_{2020}C_{2020}\cdot1^{0}\cdot(\sqrt{5})^{2020}\right) \\
+    \frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\left(1-\sqrt{5}\right)^{2020}&=\frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\left({}_{2020}C_{0}\cdot1^{2020}\cdot(\sqrt{5})^0-{}_{2020}C_{1}\cdot1^{2019}\cdot(\sqrt{5})^1+\dots+{}_{2020}C_{2020}\cdot1^{0}\cdot(\sqrt{5})^{2020}\right) \\
+    F_{2020}&=\frac{1}{\sqrt{5}}\cdot\frac{1}{2^{2020}}\cdot2\left({}_{2020}C_{1}\cdot1^{2019}\cdot(\sqrt{5})^1+{}_{2020}C_{3}\cdot1^{2017}\cdot(\sqrt{5})^3+\dots+{}_{2020}C_{2019}\cdot1^{1}\cdot(\sqrt{5})^{2019}\right) \\
+    &=\frac{1}{2^{2019}}\left({}_{2020}C_{1}\cdot(\sqrt{5})^0+{}_{2020}C_{3}\cdot(\sqrt{5})^2+\dots+{}_{2020}C_{2019}\cdot(\sqrt{5})^{2018}\right)
+\end{align*}
+$a$ represents the last three digits of the $2020^{\text{th}}$ term in the following equation.
+\[
+F_{2020} \equiv a \pmod{1000}
+\]
+Because $1000=2^3\cdot5^3$, the condition above may be split.
+\begin{align*}
+    F_{2020} &\equiv b \pmod{8} \\
+    F_{2020} &\equiv c \pmod{125} \\
+\end{align*}
+\subsection*{Part I: $F_{2020} \equiv b \pmod{8}$}
+\[
+\frac{{}_{2020}C_{1}\cdot(\sqrt{5})^0+{}_{2020}C_{3}\cdot(\sqrt{5})^2+\dots+{}_{2020}C_{2019}\cdot(\sqrt{5})^{2018}}{2^{2019}} \equiv b \pmod{8}
+\]
+\begin{lemma*}
+    A repetition of remainders occurs when the Fibonacci sequence is divided by 8.
+\end{lemma*}
+\begin{proof}
+First and foremost, replace $8$ with $n$ to manifest the situation.
+\[
+1,1,2,3,5,n,n+5,2n+5,4n+2,6n+7,11n+1,18n,\textbf{19n+1,37n+1,56n+2,74n+3,}\dots
+\]
+By induction, because the method to form the first 12 terms repeats, the remainders also retain repetition.
+\end{proof}
+\noindent
+$b$ is equal to 3 because $2020\equiv4\pmod{12}$.
+\subsection*{Part II: $F_{2020} \equiv c \pmod{125}$}
+\[
+\frac{{}_{2020}C_{1}\cdot(\sqrt{5})^0+{}_{2020}C_{3}\cdot(\sqrt{5})^2+\dots+{}_{2020}C_{2019}\cdot(\sqrt{5})^{2018}}{2^{2019}} \equiv c \pmod{125}
+\]
+An impulse to remove the terms with $(\sqrt{5})^6$ or with a higher degree is created. However, $2^{2019}$ hinders the simplification. Therefore, the terms may be rewritten.
+\[
+{}_{2020}C_{1}\cdot(\sqrt{5})^0+{}_{2020}C_{3}\cdot(\sqrt{5})^2+\dots+{}_{2020}C_{2019}\cdot(\sqrt{5})^{2018} \equiv 2^{2019}c \pmod{125}
+\]
+Euler's theorem may be utilized for further simplification because $GCF(2,125)=1$.
+\begin{align*}
+2^{\varphi(125)}&\equiv1\pmod{125} \\
+2^{125\left(1-\frac{1}{5}\right)}&\equiv1\pmod{125} \\
+2^{100}&\equiv1\pmod{125} \\
+2^{2000}&\equiv1\pmod{125} \\
+2^{2019}&\equiv2^{19}\pmod{125} \\
+2^{2019}&\equiv24\cdot12\pmod{125} \\
+2^{2019}&\equiv288\pmod{125} \\
+2^{2019}&\equiv38\pmod{125} \\
+\end{align*}
+Therefore, the following relationships are true.
+\begin{align*}
+{}_{2020}C_{1}\cdot(\sqrt{5})^0+{}_{2020}C_{3}\cdot(\sqrt{5})^2+\dots+{}_{2020}C_{2019}\cdot(\sqrt{5})^{2018} &\equiv 38c \pmod{125} \\
+{}_{2020}C_{1}+{}_{2020}C_{3}\cdot5+{}_{2020}C_{5}\cdot5^2 &\equiv 38c \pmod{125} \\
+2020+\frac{2020\cdot2019\cdot2018}{3\cdot2\cdot1}\cdot5+\frac{2020\cdot2019\cdot\dots\cdot2015}{5!}\cdot5^2 &\equiv 38c \pmod{125} \\
+20+75+100 &\equiv 38c \pmod{125} \\
+195 &\equiv 38c \pmod{125} \\
+\end{align*}
+Therefore, $38c\equiv195\pmod{125}$. Moreover, because $GCF(38,125)=1$, $c\equiv\frac{195+125k}{38}\pmod{125}$. Therefore, $F_{2020}\equiv c\equiv15\pmod{125}$
+\subsection*{Part III: Computing $F_{2020}$}
+$F_{2020} \equiv 3 \pmod{8}$ and $F_{2020} \equiv 15 \pmod{125}$ are true.
+\\\\
+Let $F_{2020}=8k+3$.
+\begin{align*}
+    8k+3&\equiv15\pmod{125} \\
+    8k&\equiv12\pmod{125} \\
+    8k&\equiv512\pmod{125} \\
+    k&\equiv64\pmod{125} \text{ }(\because GCF(8,125)=1)\\
+\end{align*}
+Let $k=125k'+64$. \\
+$F_{2020}=1000k'+67$, or the last three digits of the $2020^{\text{th}}$ term is $\boxed{515}$.
+\end{solution}
+
+\end{document}
