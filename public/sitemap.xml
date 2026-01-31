@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pages/articles/independent-study/math/ps07/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/articles/independent-study/math/ps10/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/articles/independent-study/math/ps11/</loc>
-  </url><url>
     <loc>http://localhost:1313/pages/about/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/activities/</loc>
@@ -34,9 +28,15 @@
   </url><url>
     <loc>http://localhost:1313/pages/articles/independent-study/math/ps05/</loc>
   </url><url>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps10/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps11/</loc>
+  </url><url>
     <loc>http://localhost:1313/pages/articles/independent-study/math/ps02/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/articles/independent-study/math/ps06/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps07/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/projects/</loc>
   </url><url>
