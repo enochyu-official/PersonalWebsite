@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://enochyu.com/pages/about/</loc>
+    <loc>http://localhost:1313/pages/about/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/activities/</loc>
+    <loc>http://localhost:1313/pages/activities/</loc>
   </url><url>
-    <loc>https://enochyu.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/contact/</loc>
+    <loc>http://localhost:1313/pages/contact/</loc>
   </url><url>
-    <loc>https://enochyu.com/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/honors/</loc>
+    <loc>http://localhost:1313/pages/honors/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/independent-study/</loc>
+    <loc>http://localhost:1313/pages/independent-study/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/independent-study/math/</loc>
+    <loc>http://localhost:1313/pages/independent-study/math/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/</loc>
+    <loc>http://localhost:1313/pages/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps01/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps01/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps03/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps03/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps04/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps04/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps05/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps05/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps10/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps10/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps11/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps11/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps02/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps02/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps06/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps06/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/articles/independent-study/math/ps07/</loc>
+    <loc>http://localhost:1313/pages/articles/independent-study/math/ps07/</loc>
   </url><url>
-    <loc>https://enochyu.com/pages/projects/</loc>
+    <loc>http://localhost:1313/pages/projects/</loc>
   </url><url>
-    <loc>https://enochyu.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
