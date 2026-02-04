@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int a;
+int b;
+int sum;
+int difference;
+
+void addSubtract() {
+    cin >> a >> b;
+
+    sum = a + b;
+    
+    if (a >= b) {
+        difference = a - b;
+    } else {
+        difference = b - a;
+    }
+}
+
+int main() {
+    addSubtract();
+    cout << sum << endl;
+    cout << difference << endl;
+
+    return 0;
+}
