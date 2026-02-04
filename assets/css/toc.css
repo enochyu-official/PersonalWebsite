@@ -126,6 +126,39 @@
   right: 0;
 }
 
+
+.honors-list h3 {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  position: relative;
+  font-size: 1.3rem;
+  color: #191970;
+  font-weight: 600;
+}
+
+.honors-list h3:first-of-type {
+  margin-top: 0;
+}
+
+.honors-list h3::before,
+.honors-list h3::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 80px);
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.honors-list h3::before {
+  left: 0;
+}
+
+.honors-list h3::after {
+  right: 0;
+}
+
+
 /* Honor items */
 .honor-item {
   background: white;

@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int a;
+long int b;
+char c;
+float d;
+double e;
+
+void getInput() {
+    cin >> a >> b >> c >> d >> e;
+}
+
+int main() {
+    getInput();
+    cout << a << endl
+         << setprecision(10000) << b << endl
+         << c << endl
+         << d << endl
+         << setprecision(10000) << e << endl;
+
+    return 0;
+}

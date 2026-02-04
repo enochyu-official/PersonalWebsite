@@ -71,6 +71,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+// Navbar
+document.querySelectorAll('.nav-link').forEach(link => {
+  const href = link.getAttribute('href');
+  const path = window.location.pathname;
+
+  if (href === '/' && path === '/') {
+    link.classList.add('active');
+  } 
+
+  else if (href !== '/' && path.startsWith(href)) {
+    link.classList.add('active');
+  }
+});
+
+
 // Contact
 function handleSubmit() {
   const name = document.getElementById('name').value;
@@ -112,6 +128,22 @@ if (navToggle) {
     if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
       navMenu.classList.remove('active');
       navToggle.classList.remove('active');
+    }
+  });
+}
+
+// Accordion
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
