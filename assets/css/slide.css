@@ -1,130 +1,134 @@
-.hero-slider {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+.image-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .slider-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .slide:nth-child(1) {
-  background-image:
-    linear-gradient(135deg, rgba(195, 169, 149, 0.13) 0%, rgba(171, 148, 126, 0.13) 100%),
-    url(/img/slide1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image:
+        linear-gradient(135deg, rgba(195, 169, 149, 0.13) 0%,
+            rgba(171, 148, 126, 0.13) 100%),
+        url(/img/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slide:nth-child(2) {
-  background-image:
-    linear-gradient(135deg, rgba(73, 88, 103, 0.3) 0%, rgba(87, 115, 153, 0.3) 100%),
-    url(/img/slide2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image:
+        linear-gradient(135deg, rgba(73, 88, 103, 0.3) 0%,
+            rgba(87, 115, 153, 0.3) 100%),
+        url(/img/slide2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slide:nth-child(3) {
-  background-image:
-    linear-gradient(135deg, rgba(73, 88, 103, 0.3) 0%, rgba(87, 115, 153, 0.3) 100%),
-    url(/img/slide3.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image:
+        linear-gradient(135deg, rgba(73, 88, 103, 0.3) 0%,
+            rgba(87, 115, 153, 0.3) 100%),
+        url(/img/slide3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slide.active {
-  opacity: 1;
+    opacity: 1;
 }
 
 .slide-content {
-  text-align: center;
-  color: white;
-  padding: 2rem;
-  max-width: 800px;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    max-width: 800px;
 }
 
+
 .slide-title {
-  font-family: "Times New Roman";
-  font-size: 7vw;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  margin-left: 1.5vw;
-  margin-bottom: 2vh;
-  animation: slideDown 0.8s ease-out;
+    font-family: "Times New Roman";
+    font-size: 7vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-left: 1.5vw;
+    margin-bottom: 2vh;
+    animation: slideDown 0.8s ease-out;
 }
 
 @keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: var(--transition);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .slider-btn:hover {
-  scale: 1.3;
+    scale: 1.3;
 }
 
 .slider-btn.prev {
-  left: 2rem;
+    left: 2rem;
 }
 
 .slider-btn.next {
-  right: 2rem;
+    right: 2rem;
 }
 
 .slider-dots {
-  position: absolute;
-  bottom: 1.7rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 1rem;
+    position: absolute;
+    bottom: 1.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: var(--transition);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .dot.active {
-  background: white;
-  transform: scale(1.3);
+    background: white;
+    transform: scale(1.3);
 }
 
