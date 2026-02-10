@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int length;
+
+int main() {
+    cin >> length;
+
+    int inputArray[length];
+    int outputArray[length];
+
+    for (int i = 0; i < length; i++) {
+        cin >> inputArray[i];
+    }
+
+    for (int j = 0; j < length; j++) {
+        outputArray[j] = inputArray[length - j - 1];
+    }
+
+
+    for (int k = 0; k < length; k++) {
+        cout << outputArray[k] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}

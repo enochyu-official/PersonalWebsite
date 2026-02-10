@@ -1,4 +1,4 @@
 ---
 title: "Computer Science"
-layout: "cs"
+layout: "competitive-programming"
 ---

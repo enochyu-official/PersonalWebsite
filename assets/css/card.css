@@ -93,15 +93,6 @@
   }
 }
 
-#card2-container-projects {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
-  background-color: #f7fafc;
-}
-
 .card2 {
   background: white;
   border-radius: 8px;
@@ -213,6 +204,45 @@
   gap: 2rem;
 }
 
+#card3-container-projects {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  background-color: #F8F8FF;
+}
+
+#card3-container-projects p {
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#card3-container-projects hr {
+  margin: -1rem 0;
+  border: 0;
+  text-align: center;
+  
+  &:before {
+    content: "\2022 \2022 \2022";
+    font-size: 3rem;
+    color: var(--accent-color);
+    letter-spacing: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #card3-container-projects {
+    max-width: 40vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    background-color: #F8F8FF;
+  }
+}
+
 .card3 {
   background: transparent;
   border-radius: 8px;
@@ -224,6 +254,13 @@
   width: 100%;
   height: 250px;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.card3-image-projects {
+  width: 100%;
+  height: 250px;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -239,11 +276,24 @@
   text-align: center;
 }
 
+.card3-content-projects {
+  padding: 0.5rem 0rem;
+  text-align: left;
+}
+
 .card3-content h3 {
   font-size: 1.8rem;
   color: #1b1b1b;
   font-weight: 600;
   position: relative;
+}
+
+.card3-projects h3 {
+  font-size: 2.0rem;
+  color: #1b1b1b;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .card3-btn {
@@ -307,7 +357,7 @@
   margin: 3rem 0 2rem 0;
   position: relative;
   font-size: 1.3rem;
-  color: #EC5800;
+  color: #880808;
   font-weight: 600;
 }
 
@@ -333,35 +383,10 @@
   right: 0;
 }
 
-.card4-container h3 {
-  text-align: center;
-  margin: 3rem 0 2rem 0;
-  position: relative;
-  font-size: 1.3rem;
-  color: #191970;
-  font-weight: 600;
-}
-
-.card4-container h3:first-of-type {
-  margin-top: 0;
-}
-
-.card4-container h3::before,
-.card4-container h3::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: calc(50% - 80px);
-  height: 1px;
-  background: #e2e8f0;
-}
-
-.card4-container h3::before {
-  left: 0;
-}
-
-.card4-container h3::after {
-  right: 0;
+.card4 h3 {
+  margin: 0.5rem 0;
+  color: #36454F;
+  font-size: 1.35rem;
 }
 
 .card4 {
@@ -369,15 +394,21 @@
   padding: 2rem;
   margin-bottom: 1.5rem;
   border-radius: 15px;
-  border-left: 5px solid var(--accent-color);
+  border-left: 5px solid #880808;
   text-align: left;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card4 h3 {
-  margin: 0.5rem 0;
-  color: #2d3748;
-  font-size: 1.3rem;
+.card4-year {
+  color: #880808;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.card4-actexp {
+  color: #002147;
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
 .card4 p {
