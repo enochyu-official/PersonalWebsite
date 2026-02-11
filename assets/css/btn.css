@@ -14,8 +14,9 @@
 }
 
 .btn1:hover {
-  transform: translateY(-0.7px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transform: none;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0 0;
 }
 
 
@@ -39,22 +40,42 @@
 
 
 
-#project-button {
-  align-self: center;
-  margin-top: 0.7rem;
-  cursor: pointer;
-
+#about-button {
   background-color: var(--primary-color);
   color: var(--text-light);
   border-radius: 0;
   display: inline-block;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 500;
   font-size: 0.8rem;
   transition: var(--transition);
 }
 
+#about-button:hover {
+  transform: none;
+  background: #880808;
+  box-shadow: 0 0 0 0;
+}
+
+
+#project-button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border-radius: 0;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: var(--transition);
+
+  align-self: center;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
 #project-button:hover {
-  transform: translateY(-1px);
+  transform: none;
+  background: #880808;
+  box-shadow: 0 0 0 0;
 }
 
