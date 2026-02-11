@@ -17,6 +17,7 @@
 
 .form-group label {
   display: block;
+  margin-top: 1.0rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: var(--text-dark);
@@ -41,24 +42,6 @@
 .form-group textarea {
   min-height: 150px;
   resize: vertical;
-}
-
-.error-container {
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.error-code {
-  font-size: 8rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  margin-bottom: 1rem;
-}
-
-.error-message {
-  font-size: 2rem;
-  color: var(--secondary-color);
-  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -89,5 +72,6 @@
   width: 100%;
   cursor: pointer;
   border: none;
+  margin-top: 0.7rem;
   font-size: 1.1rem;
 }

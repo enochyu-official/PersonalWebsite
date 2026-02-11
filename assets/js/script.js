@@ -87,26 +87,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-// Contact
-function handleSubmit() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const subject = document.getElementById('subject').value;
-  const message = document.getElementById('message').value;
-
-  if (!name || !email || !subject || !message) {
-    alert('Please fill in all fields');
-    return;
-  }
-
-  alert('Thank you for your message!! I will get back to you soon.');
-  
-  document.getElementById('name').value = '';
-  document.getElementById('email').value = '';
-  document.getElementById('subject').value = '';
-  document.getElementById('message').value = '';
-}
-
 // Burger
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
@@ -132,6 +112,7 @@ if (navToggle) {
   });
 }
 
+
 // Accordion
 let acc = document.getElementsByClassName("accordion");
 let i;
@@ -147,3 +128,42 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+// Contact Form
+const form = document.getElementById('form');
+const submitBtn = form.querySelector('button[type="submit"]');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  formData.append("access_key", "f7db8f47-7025-441a-887f-b9c0a354dad5");
+
+  const originalText = submitBtn.textContent;
+
+  submitBtn.textContent = "Sending...";
+  submitBtn.disabled = true;
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert("Success! Your message has been sent.");
+      form.reset();
+    } else {
+      alert("Error: " + data.message);
+    }
+
+  } catch (error) {
+    alert("Something went wrong. Please try again.");
+  } finally {
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  }
+});
