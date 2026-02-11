@@ -47,7 +47,7 @@
   height: 2px;
   bottom: -5px;
   left: 0;
-  background: var(--accent-color);
+  background: #fca311;
   transition: var(--transition);
 }
 

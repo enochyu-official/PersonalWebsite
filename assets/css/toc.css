@@ -41,7 +41,7 @@
 .toc ul {
   list-style: none;
   padding-left: 0;
-  border-left: 1px solid #EC5800;
+  border-left: 1px solid #880808;
   margin: 0;
 }
 
@@ -61,14 +61,14 @@
 }
 
 .toc a:hover {
-  color: #EC5800;
-  border-left-color: #EC5800;
+  color: #880808;
+  border-left-color: #880808;
   background: rgba(102, 126, 234, 0.05);
 }
 
 .toc a.active {
-  color: #EC5800;
-  border-left-color: #EC5800;
+  color: #880808;
+  border-left-color: #880808;
   font-weight: 600;
 }
 

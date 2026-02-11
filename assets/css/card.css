@@ -384,9 +384,9 @@
 }
 
 .card4 h3 {
-  margin: 0.5rem 0;
-  color: #36454F;
-  font-size: 1.35rem;
+  color: #002147;
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
 .card4 {
@@ -415,6 +415,14 @@
   color: #4a5568;
   line-height: 1.6;
   margin: 0;
+}
+
+.card4-honors p {
+  margin-bottom: 1.15rem;
+}
+
+.card4-honors-last {
+  margin-bottom: 0 !important;
 }
 
 @media (max-width: 1023px) {
