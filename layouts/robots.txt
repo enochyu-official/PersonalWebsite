@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://enochyu.com/sitemap.xml
-
