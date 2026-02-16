@@ -44,13 +44,20 @@
   background-color: #F8F8FF;
 }
 
+.section3-content p {
+  max-width: 80vw;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 @media (min-width: 1024px) {
   .section3 {
     display: flex;
     gap: 3rem;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 5rem;
     align-items: start;
   }
 }
@@ -104,14 +111,6 @@
   padding: 2rem;
 }
 
-#section3-project-ProblemOfTheDay-content h2 {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #1B1B1B;
-  text-align: left;
-  margin-bottom: 1.1rem;
-}
-
 #section3-project-ProblemOfTheDay-content p,
 #section3-project-ProblemOfTheDay-content ul li {
   font-size: 1.2rem;
@@ -158,3 +157,109 @@
 
 
 
+
+
+/* Projects - JS-Mini-Project */
+#previewList {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  padding: 2rem;
+}
+
+.previewBox {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 2em;
+  align-items: center;
+}
+
+.previewLink {
+  font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+#previewList h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  text-align: left;
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  #previewList {
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  .previewLink {
+    font-size: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+    height: 5dvh;
+  }
+}
+
+@media (max-width: 767px) {
+  #previewList {
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  .previewLink {
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+    height: 5dvh;
+  }
+}
+
+@media (max-width: 992px) {
+  #previewList {
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  .previewLink {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 5dvh;
+  }
+}
+
+.projectPreview {
+  width: 100%;
+  height: 60dvh;
+  border: 2px solid var(--accent-color2);
+}
+
+@media (max-width: 767px) {
+  .projectPreview {
+    min-width: 90%;
+    height: 60dvh;
+  }
+}
+
+@media (max-width: 992px) {
+  .projectPreview {
+    width: 70%;
+    height: 60dvh;
+  }
+}
+
+.projectPreview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
