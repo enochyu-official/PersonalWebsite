@@ -1,4 +1,7 @@
 // Slides
+const nav = document.querySelector('.navbar');
+document.documentElement.style.setProperty('--nav-height', nav.offsetHeight + 'px');
+
 let currentSlideNumber = 0;
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
@@ -167,3 +170,4 @@ form.addEventListener('submit', async (e) => {
     submitBtn.disabled = false;
   }
 });
+

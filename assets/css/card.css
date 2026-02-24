@@ -52,7 +52,7 @@
 
 .card1-contents h3 {
   font-size: 1.25rem;
-  color: var(--accent-color);
+  color: var(--accent-color1);
   margin-bottom: 0.3rem;
 }
 
@@ -190,7 +190,7 @@
 .card3-section {
   padding: 2rem 2rem;
   background: transparent;
-  background-color: whitesmoke;
+  background-color: var(--bg-color);
 }
 
 .card3-section h2 {
@@ -198,11 +198,10 @@
 }
 
 .card3-container {
-  max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
 }
 
 #card3-container-projects {
@@ -211,7 +210,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  background-color: #F8F8FF;
+  background-color: var(--bg-color);
 }
 
 #card3-container-projects p {
@@ -228,7 +227,7 @@
   &:before {
     content: "\2022 \2022 \2022";
     font-size: 3rem;
-    color: var(--accent-color);
+    color: var(--accent-color1);
     letter-spacing: 1rem;
   }
 }
@@ -240,7 +239,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    background-color: #F8F8FF;
+    background-color: var(--bg-color);
   }
 }
 
@@ -252,10 +251,11 @@
 }
 
 .card3-image {
-  width: 100%;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .card3-image-projects {
@@ -295,23 +295,6 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 0.5rem;
-}
-
-.card3-btn {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
-  background: #2d3748;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: var(--transition);
-  margin-top: 0.5rem;
-}
-
-.card3-btn:hover {
-  background: #1b1b1b;
 }
 
 @media (max-width: 1200px) {
@@ -355,44 +338,11 @@
 
 .card4-container h2 {
   font-size: 2.3rem;
-  font-weight: 800;
-  color: var(--accent-color);
+  font-weight: 550;
+  color: var(--accent-color1);
   text-align: left;
   margin-bottom: 0.8rem;
 }
-
-/*
-.card4-container h2 {
-  text-align: center;
-  margin: 3rem 0 2rem 0;
-  position: relative;
-  font-size: 1.3rem;
-  color: #880808;
-  font-weight: 600;
-}
-
-.card4-container h2:first-of-type {
-  margin-top: 0;
-}
-
-.card4-container h2::before,
-.card4-container h2::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: calc(50% - 80px);
-  height: 1px;
-  background: #e2e8f0;
-}
-
-.card4-container h2::before {
-  left: 0;
-}
-
-.card4-container h2::after {
-  right: 0;
-}
-*/
 
 .card4 h3 {
   color: #002147;
@@ -401,17 +351,18 @@
 }
 
 .card4 {
-  background: white;
   padding: 2rem;
   margin-bottom: 1.5rem;
-  border-radius: 15px;
-  border-left: 5px solid #880808;
+  background-color: transparent;
   text-align: left;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 16px;
+  border-left: 2.5px solid var(--accent-color1);
+  border-right: 2.5px solid var(--accent-color1);
 }
 
 .card4-year {
-  color: #880808;
+  color: var(--accent-color1);
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -446,4 +397,7 @@
     width: calc(50% - 60px);
   }
 }
+
+
+
 

@@ -1,4 +1,0 @@
----
-title: "Honors"
-layout: "honors"
----

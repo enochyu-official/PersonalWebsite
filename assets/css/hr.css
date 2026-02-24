@@ -1,4 +1,6 @@
 hr.styled-hr {
+  width: 100%;
+  margin: 0 auto;
   border: none;
   height: 2px;
   background-image: linear-gradient(to right, #f5f5f5, #28282B, #f5f5f5);
@@ -12,7 +14,7 @@ hr.styled-hr::after {
   transform: translate(-50%, -50%) rotate(60deg);
   transform-origin: 50% 50%;
   padding: 1rem;
-  background-color: whitesmoke;
+  background-color: var(--bg-color);
 }
 
 

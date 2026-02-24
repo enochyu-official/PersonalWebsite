@@ -1,32 +1,33 @@
 /* TOC */
 .toc-sidebar {
-  width: 100%;
-  position: static;
-  height: auto;
-  max-height: none;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  width: 280px;
+  position: sticky;
+  top: 2.5rem;
+  height: fit-content;
+  max-height: calc(100vh - 120px);
+  margin-bottom: 0;
+  flex-shrink: 0;
+  order: 1;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1023px) {
   .toc-sidebar {
-    width: 280px;
-    position: sticky;
-    top: 125px;
-    height: fit-content;
-    max-height: calc(100vh - 120px);
-    margin-bottom: 0;
-    flex-shrink: 0;
-    order: 1;
+    width: 100%;
+    position: static;
+    height: auto;
+    max-height: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
 .toc {
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.65);
+  border-radius: 5px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
 .toc-title {
@@ -34,15 +35,13 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 20px;
-  color: #1B1B1B;
-  font-weight: 600;
+  color: var(--accent-color1);
 }
 
 .toc ul {
   list-style: none;
   padding-left: 0;
-  border-left: 1px solid #880808;
-  margin: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .toc li {
@@ -52,30 +51,27 @@
 .toc a {
   display: block;
   padding: 6px 16px;
-  color: #1B1B1B;
+  color: inherit;
   text-decoration: none;
   font-size: 14px;
+  opacity: 0.6;
   border-left: 2px solid transparent;
   margin-left: -1px;
   transition: all 0.3s ease-in-out;
 }
 
 .toc a:hover {
-  color: #880808;
-  border-left-color: #880808;
-  background: rgba(102, 126, 234, 0.05);
-}
-
-.toc a.active {
-  color: #880808;
-  border-left-color: #880808;
-  font-weight: 600;
+  opacity: 1;
+  color: var(--accent-color1);
+  border-left-color: var(--accent-color1);
 }
 
 .toc ul ul {
   padding-left: 15px;
   border-left: none;
-  margin-top: 4px;
 }
 
+.toc a:hover {
+  opacity: 0.8;
+}
 
