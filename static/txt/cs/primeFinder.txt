@@ -1,0 +1,48 @@
+#include <iostream>
+
+long long n;
+
+void primeFinder() {
+    int expo = 0;
+
+    // Even Prime
+    while (n % 2 == 0) {
+        n /= 2;
+        expo++;
+    }
+    if (expo > 1) {
+        std::cout << "2^" << expo << std::endl;
+    } else if (expo == 1) {
+        std::cout << "2\n";
+    }
+
+    // Odd Prime < Square Root of "n"
+    for (long long i = 3; i*i <= n; i += 2) {
+        expo = 0;
+
+        while (n % i == 0) {
+            n /= i;
+            expo++;
+        }
+        if (expo > 1) {
+            std::cout << i << "^" << expo << std::endl;
+        } else if (expo == 1) {
+            std::cout << i << std::endl;
+        }
+    }
+
+    // Last Prime
+    if (n > 1) {
+        std::cout << n << std::endl;
+    }
+}
+
+int main() {
+    std::cin >> n;
+    primeFinder();
+
+    return 0;
+}
+
+
+

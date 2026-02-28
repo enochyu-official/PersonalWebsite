@@ -1,34 +1,25 @@
-.page-404 {
-  background-color: #141414;
-  color: whitesmoke;
-  height: 100vh;
+.error-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 90vh;
 }
 
-#number-404 {
-  font-size: 1vw;
-  cursor: none;
+.error-page h1 {
+  font-size: 15vw;
+  color: var(--accent-color1);
 }
 
-#text-404 {
-  font-size: 0.5vw;
-  cursor: none;
+.error-page p {
+  font-size: 2.1rem;
+  font-weight: 400;
 }
 
-#btn-404 {
-  display: block;
-  text-align: center;
-  color: whitesmoke;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 768px) {
-  #btn-404 {
-    font-size: 1rem;
-  }
+.error-page a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 

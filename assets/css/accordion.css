@@ -1,11 +1,12 @@
 .accordion {
-  background-color: whitesmoke;
+  background-color: var(--bg-color);
   color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   text-align: left;
   border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.65);
   outline: none;
   transition: 0.4s;
 }
@@ -28,7 +29,7 @@
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: var(--bg-color);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
