@@ -2,6 +2,8 @@ baseURL = 'https://enochyu.com/'
 languageCode = 'en-us'
 title = 'Enoch Yu'
 
+enableRobotsTXT = true
+
 [params]
 author = "Enoch Yu"
 favicon = "/img/favicon/favicon.ico"
